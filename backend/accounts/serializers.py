@@ -67,3 +67,22 @@ class UserMeSerializer(serializers.ModelSerializer):
             "date_joined",
         )
         read_only_fields = fields
+
+
+class UserListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = (
+            "id",
+            "username",
+            "email",
+            "phone_number",
+            "first_name",
+            "last_name",
+            "avatar",
+            "is_verified",
+            "is_active",
+            "is_staff",
+            "date_joined",
+        )
+        read_only_fields = fields
