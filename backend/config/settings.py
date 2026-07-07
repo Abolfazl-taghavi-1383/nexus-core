@@ -146,3 +146,6 @@ SIMPLE_JWT = {
     "BLACKLIST_AFTER_ROTATION": True,
     "AUTH_HEADER_TYPES": ("Bearer",),
 }
+
+FRONTEND_PASSWORD_RESET_URL = "http://localhost:3000/reset-password"
+DEFAULT_FROM_EMAIL = "noreply@nexus.local"
