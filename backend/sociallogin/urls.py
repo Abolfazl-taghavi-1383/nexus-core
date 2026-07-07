@@ -7,4 +7,6 @@ from .views import GoogleSocialLoginAPIView, GitHubSocialLoginAPIView
 urlpatterns = [
     path("google/", GoogleSocialLoginAPIView.as_view(), name="social-google-login"),
     path("github/", GitHubSocialLoginAPIView.as_view(), name="social-github-login"),
+    path("github/callback", GitHubSocialLoginAPIView.as_view(), name="social-github-login"),
+    path("google/callback", GitHubSocialLoginAPIView.as_view(), name="social-github-login"),
 ]

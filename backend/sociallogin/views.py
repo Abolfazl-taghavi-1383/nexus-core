@@ -77,6 +77,7 @@ class GitHubSocialLoginAPIView(APIView):
             status=status.HTTP_200_OK,
         )
         
+        
 class GoogleSocialCallbackTestAPIView(APIView):
     permission_classes = [permissions.AllowAny]
 
